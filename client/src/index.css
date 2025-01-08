@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.shadow-cm {
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.slick-arrow::after, .slick-arrow::before {
+     color: black;    
+    
+}
+
+.slick-active h2 {
+    animation: k 0.5s 0.45s forwards;
+}
+
+.ant-form-item {
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+.ant-form {
+    width: 100% !important;
+}
+
+.slick-active img {
+    animation: l 0.5s 0.45s forwards;
+}
+.ant-select-selector {
+    border: none !important;
+    outline:  none !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+.ant-menu-item:has(.active) {
+    background-color: black !important;
+    padding-block: 25px !important;
+    color: #fff !important;
+}
+.ant-layout-sider-children {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.ant-layout-sider {
+    width: 290px !important;
+    max-width: 290px !important;
+}
+.ant-menu-item-selected {
+    padding-block: 25px !important;
+    background-color: #1677ff !important;
+    color: #fff !important;
+}
+.main-container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+.ant-col-12 {
+    max-width: 100% !important;
+}
+
+@keyframes k {
+    0% {
+        transform: translateY(-100%) scaleY(0.95);
+    }
+    100% {
+        transform: translateY(0px) scaleY(1);
+    }
+}
+
+@keyframes l {
+    0% {
+        transform: translateX(150px);
+    }
+    50% {
+        transform: translateX(-70px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+.ant-steps-item-icon {
+    background-color: blue !important;
+    display: none !important;
+}
+.ant-steps-icon {
+    color: #fff !important;
+}
+.ant-steps-item-content {
+    background-color: #000064 !important;
+    padding: 10px !important;
+    border-radius: 30px;
+}
+.ant-steps-item-title {
+    color: #fff !important;
+    padding: 0 !important;
+}
+.ant-steps-item-container {
+    border: none !important;
+}
+.ant-steps .ant-steps-item-title::after {
+    display: none !important;
+}
+.ant-steps {
+    display: flex !important ;
+    justify-content: center !important;
+    padding: 0 !important;
+}

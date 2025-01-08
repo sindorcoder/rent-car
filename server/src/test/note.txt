@@ -1,0 +1,3 @@
+rsync -avz --exclude 'node_modules' --exclude '.git' --exclude '.env' \
+-e "ssh -i ~/Desktop/ssh/uzbekistan-ij-macbookpro.pem" \
+. ubuntu@ec2-13-51-206-62.eu-north-1.compute.amazonaws.com:~/server
